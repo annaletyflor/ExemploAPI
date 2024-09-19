@@ -21,5 +21,9 @@ namespace ExemploAPI.Data
             builder.Entity<Venda>().ToTable("Vendas");
             builder.Entity<ItensVenda>().ToTable("ItensVenda");
         }
+        public DbSet<ExemploAPI.Models.Player> Player { get; set; } = default!;
+        public DbSet<ExemploAPI.Models.Nivel> Nivel { get; set; } = default!;
+        public DbSet<ExemploAPI.Models.Contato> Contato { get; set; } = default!;
+        public DbSet<ExemploAPI.Models.Cursos> Cursos { get; set; } = default!;
     }
 }
